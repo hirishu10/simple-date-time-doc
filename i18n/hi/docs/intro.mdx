@@ -1,0 +1,326 @@
+---
+sidebar_position: 1
+---
+
+# परिचय
+
+# @hirishu10/simple-date-time ![Version](https://img.shields.io/npm/v/@hirishu10/simple-date-time?style=flat-square) ![License](https://img.shields.io/npm/l/@hirishu10/simple-date-time?style=flat-square) ![Downloads](https://img.shields.io/npm/dt/@hirishu10/simple-date-time?style=flat-square) ![DocsPassing](https://img.shields.io/github/package-json/v/hirishu10/simple-date-time?color=%23050505&label=Github&logo=Github&style=flat-square)
+
+<!--  -->
+
+Simple and very helpful package to get the Date Time functionality.
+
+Now everyone can create full fletched `Clock` and `Date`-`Time` service using this package hope you like this Thank You 🙂.
+
+<!-- Let's discover **Docusaurus in less than 5 minutes**. -->
+
+<!-- Contents -->
+
+# Content
+
+- [Getting Started](#getting-started)
+- [Overview](#overview)
+- [Method and Props Configuration](#method-and-props-configuration)
+- [Feature Update](#feature-update)
+- [Author](#author)
+- [License](#license)
+<!-- Contents -->
+
+<!-- Getting Started -->
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en/download/) (version 16 or greater).
+- Yarn (version 1.5 or greater).
+- A fork of the repo (for any contributions).
+- Please read the docs carefully Thanks
+
+## Installation
+
+> Using npm
+
+```bash
+npm i @hirishu10/simple-date-time
+```
+
+> Using Yarn
+
+```bash
+yarn add @hirishu10/simple-date-time
+```
+
+## Getting Started
+
+##### Simple and Customized Date-Time Functionality
+
+```jsx
+import {
+  getCustomDayNameFull,
+  getCustomDayNameShort,
+  getCustomMonthNameFull,
+  getCustomMonthNameShort,
+  getCustomMonth,
+  getCustomYear,
+  getCustomDate,
+  getCustomHour,
+  getCustomMinute,
+  getCustomSecond,
+  getCustomAmPm,
+  getCustomFullDateAndTimeWithAmPm,
+  getCustomFullDateAndTimeWithAmPmIncludingSeconds,
+  getCustomDTFormatter,
+} from "@hirishu10/simple-date-time";
+```
+
+```jsx
+const fullDay = getCustomDayNameFull();
+const shortDay = getCustomDayNameShort();
+const fullMonth = getCustomMonthNameFull();
+const shortMonth = getCustomMonthNameShort();
+const month = getCustomMonth();
+const year = getCustomYear();
+const toDate = getCustomDate();
+const hour = getCustomHour();
+const minute = getCustomMinute();
+const second = getCustomSecond();
+const amPm = getCustomAmPm();
+const timestampLower = getCustomFullDateAndTimeWithAmPm();
+const timestampwithSeconds = getCustomFullDateAndTimeWithAmPmIncludingSeconds();
+```
+
+##### Done 🙂 you don't need to write any further code to get the Date-Time Functionality just calling the simple function and you can good to go
+
+<!-- Getting Started -->
+
+<!-- overview -->
+
+## Overview
+
+#### 📖 Below we provide examples with code how to use!
+
+> getCustomDayNameFull();
+
+```jsx
+const fullDay = getCustomDayNameFull();
+Output: friday;
+```
+
+> getCustomDayNameShort();
+
+```jsx
+const shortDay = getCustomDayNameShort();
+Output: fri;
+```
+
+> getCustomMonthNameFull();
+
+```jsx
+const fullMonth = getCustomMonthNameFull();
+Output: october;
+```
+
+> getCustomMonthNameShort();
+
+```jsx
+const shortMonth = getCustomMonthNameShort();
+Output: oct;
+```
+
+<!-- New Feature 2023 -->
+
+<div
+  style={{
+    width: "100%",
+    height: "auto",
+    backgroundColor: "transparent",
+    borderRadius: "8px",
+    marginBottom: "5px",
+    border: "1px solid silver",
+  }}
+>
+  <div style={{ color: "#e91e63", fontWeight: "bold", marginLeft: "5px" }}>
+    *New
+    <div style={{ color: "lightseagreen" }}>getCustomMonth();</div>
+  </div>
+</div>
+
+```jsx
+const month = getCustomMonth();
+Output: 10; // month
+```
+
+<div
+  style={{
+    width: "100%",
+    height: "auto",
+    backgroundColor: "transparent",
+    borderRadius: "8px",
+    marginBottom: "5px",
+    border: "1px solid silver",
+  }}
+>
+  <div style={{ color: "#e91e63", fontWeight: "bold", marginLeft: "5px" }}>
+    *New
+    <div style={{ color: "lightseagreen" }}>getCustomYear();</div>
+  </div>
+</div>
+
+```jsx
+const year = getCustomYear("yy");
+Output: 23; // year
+```
+
+<!-- New Feature 2023 -->
+
+> getCustomDate();
+
+```jsx
+const toDate = getCustomDate();
+Output: 10; // todate
+```
+
+> getCustomHour();
+
+```jsx
+const hour = getCustomHour();
+Output: 10; // current hour
+```
+
+> getCustomMinute();
+
+```jsx
+const minute = getCustomMinute();
+Output: 10; // current minute
+```
+
+> getCustomSecond();
+
+```jsx
+const second = getCustomSecond();
+Output: 10; // current seconds
+```
+
+> getCustomAmPm();
+
+```jsx
+const amPm = getCustomAmPm();
+Output: am / pm;
+```
+
+> getCustomFullDateAndTimeWithAmPm();
+
+```jsx
+const timestampLower = getCustomFullDateAndTimeWithAmPm();
+Output: 10 Oct Fri 10:00am
+```
+
+> getCustomFullDateAndTimeWithAmPmIncludingSeconds();
+
+```jsx
+const timestampwithSeconds = getCustomFullDateAndTimeWithAmPmIncludingSeconds();
+Output: 10 Oct Fri 10:00:00 am
+```
+
+<!-- New Feature 2023 -->
+
+<div
+  style={{
+    width: "100%",
+    height: "auto",
+    backgroundColor: "transparent",
+    borderRadius: "8px",
+    marginBottom: "5px",
+    border: "1px solid silver",
+  }}
+>
+  <div style={{ color: "#e91e63", fontWeight: "bold", marginLeft: "5px" }}>
+    *New
+    <div style={{ color: "lightseagreen" }}>
+      getCustomDTFormatter().format();
+    </div>
+    <ul>
+      <li>
+        <span style={{ fontWeight: "500", color: "mediumseagreen" }}>
+          getCustomDTFormatter(dateValue?)
+        </span>{" "}
+        - If you want to use old date please provide unix value inside the
+        dateValue.
+      </li>
+      <li>
+        <span style={{ fontWeight: "500", color: "mediumseagreen" }}>
+          format(formatValue, insertCharacters?)
+        </span>{" "}
+        - You have to pass formatValue (Please read the Method and Props table),<span style={{color:"dodgerblue"}}> Note: <span style={{fontSize:"15px"}}>*</span>add space after each char</span>
+      </li>
+      <li>
+        insertCharacters is totally optional, if you need to provide a character at the end of each formatValue character, you can add.
+      </li>
+      <li style={{ textDecoration: "underline", fontStyle: "italic",fontWeight: "500", }}>
+        Example below:
+      </li>
+    </ul>
+  </div>
+</div>
+
+```jsx
+const customTimeStamp = getCustomDTFormatter().format("dt mt yyyy", { dt: "⟆",mt:"⟆" });
+Output: 10⟆7⟆2023 ; //
+```
+
+<!-- New Feature 2023 -->
+
+<!-- overview -->
+
+<!-- method and props  -->
+
+## Method and Props Configuration
+
+🔧 Below are the props which you can use to customized the date-time behavior.
+
+| Method / Props                                                                                                |                   Type                   | Description                                                                                                                                                                                                   |
+| :------------------------------------------------------------------------------------------------------------ | :--------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Deprecated` ~~capsOnFlag~~ <br></br><div style={{ color: "red",fontWeight:"bold" }}>\*New</div> **caseFlag** | ~~boolean~~ <br></br> <br></br> _String_ | ~~By default False If Provide True then return the String in UpperCase else in LowerCase~~ <br></br> <br></br> lowercase by default, The "u" string will be in uppercase or "p" for proper case, if provided. |
+| `Deprecated` ~~properCaseFlag~~                                                                               |               ~~boolean~~                | ~~By default True Providing this the String will return in Proper structure else all in lower case~~                                                                                                          |
+| **changeToStringFlag**                                                                                        |                _boolean_                 | Totally Optional if you need in String make true the flag else ignore                                                                                                                                         |
+| `Deprecated` ~~shortOrFullFlag~~                                                                              |               ~~boolean~~                | ~~By Default False which return the Day, Month in Short else Make True to return in Full~~                                                                                                                    |
+| `Deprecated` ~~lowerOrUpperFlag~~                                                                             |               ~~boolean~~                | ~~By Default False which return the Day, Month in lowerCase else Make True to return in UpperCase~~                                                                                                           |
+| <div style={{ color: "red",fontWeight:"bold" }}>\*New</div> **yearFlag**                                      |                 _String_                 | "yy" this will return the last two number, "yyyy" this will return full year                                                                                                                                  |
+| <div style={{ color: "red",fontWeight:"bold" }}>\*New</div> **timeStampFlag**                                 |                 _String_                 | condition: "**shortForm_upperCase**" OR "**shortForm_lowerCase**" OR "**fullForm_upperCase**" OR "**fullForm_lowerCase**"                                                                                     |
+| <div style={{ color: "red",fontWeight:"bold" }}>\*New</div> **formatValue**                                   |                 _String_                 | `yy` ⟆→ year like **23** <br></br> `yyyy` ⟆→ year like **2023** <br></br> `M` ⟆→ month like **jul** <br></br> `Mu` ⟆→ month like **JUL** <br></br> `Mp` ⟆→ month like **Jul** <br></br> `MM` ⟆→ month like **july** <br></br> `MMu` ⟆→ month like **JULY** <br></br> `MMp` ⟆→ month like **July** <br></br> `mt` ⟆→ month like **7** <br></br> `dt` ⟆→ date like **10** <br></br> `d` ⟆→ day like **thu** <br></br> `du` ⟆→ day like **THU** <br></br> `dp` ⟆→ day like **Thu** <br></br> `d` ⟆→ day like **thursday** <br></br> `ddu` ⟆→ day like **THURSDAY** <br></br> `ddp` ⟆→ day like **Thursday** <br></br> `m` ⟆→ minute like **10** <br></br> `h` ⟆→ hours like **10** <br></br> `s` ⟆→ seconds like **10** <br></br> `ap` ⟆→ **am / pm** <br></br> `apu` ⟆→ **AM / PM** <br></br> `h:m` ⟆→ hour, minute like **10:10** <br></br> `h:m:s` ⟆→ hour,minute,second like **10:10:10** <br></br>                                                                |
+
+<!-- method and props  -->
+
+<!-- <div style={{ width: "400px", height: "100px", backgroundColor: "red" }}>asdfasdfdsf</div> -->
+<!-- <div style={{ color: "red" }}>jhjhkhk</div> -->
+
+<!-- feature update -->
+
+## Feature Update
+
+##### We are working on this for improving the package which helps everyone thanks 🙏🏻
+
+<!-- feature update -->
+
+<!-- author  -->
+
+## Author
+
+#### Thank You All 🙏🏻
+
+Made with 🖤 by
+
+**Author** : [Rishu Chowdhary](https://github.com/hirishu10)
+
+**Email** : hi.10rishu@gmail.com
+
+<!-- author  -->
+
+<!-- licesnce  -->
+
+## License
+
+### MIT License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/hirishu10/simple-date-time/blob/main/LICENSE) file for details
+
+<!-- licesnce  -->

@@ -1,0 +1,8 @@
+{
+  "label": "getCustomDTFormatter",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Custom date formatter for back date or current date"
+  }
+}
