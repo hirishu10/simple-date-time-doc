@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "hirishu10/simple-date-time",
+  title: "@hirishu10/simple-date-time",
   tagline:
     "Simple and very helpful package to get the Date Time functionality.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://simpledt.netlify.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -43,15 +43,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // 'https://github.com/hirishu10/simple-date-time/blob/main/'
+            "https://github.com/hirishu10/simple-date-time-doc/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/hirishu10/simple-date-time-doc/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -71,82 +70,23 @@ const config = {
           alt: "simple-date-time",
           src: "/img/logo.svg",
           srcDark: "/img/logo-dark.svg",
+          href: "/",
         },
         items: [
-          // {
-          //   type: "doc",
-          //   position: "left",
-          //   // docId: "intro",
-          //   label: "Docs",
-          // },
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
             label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          // {
-          //   href: "https://github.com/facebook/docusaurus",
-          //   // label: "",
-          //   position: "right",
-          //   // icon:"Github"
-          // },
-          //
-          // This is Dropdown
-          // {
-          //   type: "dropdown",
-          //   label: "Version",
-          //   position: "right",
-          //   items: [
-          //     {
-          //       label: "Facebook",
-          //       href: "https://www.facebook.com",
-          //     },
-          //     // ... more items
-          //   ],
-          // },
-          // {
-          //   type: "docsVersion",
-          //   position: "right",
-          //   to: "/path",
-          //   label: "label",
-          // },
-          // This is doc version dropdown
-          // {
-          //   type: "dropdown",
-          //   position: "right",
-          //   to: "/path",
-          //   label: "v.2.0.0",
-          //   items: [
-          //     {
-          //       label: "v.1.1.0",
-          //       href: "#",
-          //     },
-          //   ],
-          // },
-          // This is for version
-          // {
-          //   type: "docsVersion",
-          //   position: "right",
-          //   to: "/path",
-          //   label: "label",
-          // },
-          //
+          // { to: "/blog", label: "Blog", position: "left" },
           // This is for Language local
           {
             type: "localeDropdown",
             position: "right",
             items: [{}],
           },
-          // {
-          //   href: "https://github.com/facebook/docusaurus",
-          //   position: "right",
-          //   className: "header-github-link",
-          //   "aria-label": "GitHub repository",
-          //   label: "GitHub",
-          // },
-          // This is custom HTML for Navbar
+          // Github logo Button
           {
             type: "html",
             position: "right",
@@ -157,18 +97,6 @@ const config = {
         // This is for scroll navbar sticky
         hideOnScroll: true,
       },
-
-      // Announcement Bar top of the page
-      // announcementBar: {
-      //   id: "support_us",
-      //   content: "@hirishu10/simple-date-time",
-      //   // content:
-      //   //   'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-      //   backgroundColor: "#fafbfc",
-      //   textColor: "#091E42",
-      //   isCloseable: false,
-      // },
-      //
       footer: {
         // style: "dark",// This is for default
         logo: {
@@ -179,6 +107,7 @@ const config = {
           target: "_blank",
         },
         links: [
+          // Learn
           {
             title: "Learn",
             items: [
@@ -190,15 +119,23 @@ const config = {
                 label: "react-native-customized-box",
                 href: "https://www.npmjs.com/package/react-native-customized-box",
               },
+              {
+                html: `
+                    <a href="https://www.npmjs.com/package/@hirishu10/simple-date-time" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify" style="display:flex;flex-direction:column;">
+                      <img src="/img/npm.svg" alt="Deploys by Netlify" width="114" height="51" />
+                      @hirishu/simple-date-time
+                    </a>
+                  `,
+              },
             ],
           },
-          //
+          // Blog
           {
             title: "Blog",
             items: [
               {
                 label: "Blog Page",
-                to: "/blog",
+                to: "#",
               },
               {
                 label: "Discord",
@@ -210,38 +147,39 @@ const config = {
               },
             ],
           },
-          //
+          // More
           {
             title: "More",
             items: [
               {
-                label: "Github-Readme-Design",
-                href: "https://github-readme-design.vercel.app/",
+                label: "Instant Markdown Previewer",
+                href: "https://instantmarkdown.netlify.app/",
+              },
+              {
+                label: "MERN Store List",
+                href: "https://mernstorelist.netlify.app/",
               },
               {
                 label: "Payment App (Razorpay)",
                 href: "https://payment-page-with-razorpay.netlify.app/",
               },
-              {
-                html: `
-                    <a href="https://rishuapi.vercel.app/api" target="_blank" rel="noreferrer noopener" aria-label="rishuapi">
-                      <img src="https://rishuapi.vercel.app/assets/test.svg" alt="Learn rishuapi" width="114" height="51" />
-                    </a>
-                  `,
-              },
             ],
           },
-          //
+          // Connect
           {
             title: "Connect",
             items: [
               {
                 label: "Github",
-                href: "#",
+                href: "https://github.com/hirishu10",
               },
               {
                 label: "Stack Overflow",
                 href: "#",
+              },
+              {
+                label: "Portfolio",
+                href: "https://rishuchowdhary.vercel.app/",
               },
               {
                 html: `

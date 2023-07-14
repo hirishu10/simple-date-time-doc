@@ -2,38 +2,38 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# परिचय
 
 # @hirishu10/simple-date-time ![Version](https://img.shields.io/npm/v/@hirishu10/simple-date-time?style=flat-square) ![License](https://img.shields.io/npm/l/@hirishu10/simple-date-time?style=flat-square) ![Downloads](https://img.shields.io/npm/dt/@hirishu10/simple-date-time?style=flat-square) ![DocsPassing](https://img.shields.io/github/package-json/v/hirishu10/simple-date-time?color=%23050505&label=Github&logo=Github&style=flat-square)
 
 <!--  -->
 
-Simple and very helpful package to get the Date Time functionality.
+दिनांक समय कार्यक्षमता प्राप्त करने के लिए सरल और बहुत उपयोगी पैकेज।
 
-Now everyone can create full fletched `Clock` and `Date`-`Time` service using this package hope you like this Thank You 🙂.
+अब हर कोई इस पैकेज का उपयोग करके पूर्ण <code>घड़ी</code> और <code>दिनांक</code> - <code>समय</code> सेवा बना सकता है, आशा है कि आपको यह पसंद आएगा धन्यवाद 🙂।
 
 <!-- Contents -->
 
-# Contents
+# विषय
 
-- [Getting Started](#getting-started)
-- [Overview](#overview)
-- [Method and Props Configuration](#method-and-props-configuration)
-- [Feature Update](#feature-update)
-- [Author](#author)
-- [License](#license)
+- [शुरू करना](#शुरू-करना)
+- [अवलोकन](#अवलोकन)
+- [विधि और प्रॉप्स कॉन्फ़िगरेशन](#विधि-और-प्रॉप्स-कॉन्फ़िगरेशन)
+- [फ़ीचर अद्यतन](#फ़ीचर-अद्यतन)
+- [लेखक](#लेखक)
+- [लाइसेंस](#लाइसेंस)
 <!-- Contents -->
 
 <!-- Getting Started -->
 
-## Prerequisites
+## आवश्यक शर्तें
 
 - [Node.js](https://nodejs.org/en/download/) (version 16 or greater).
 - Yarn (version 1.5 or greater).
 - A fork of the repo (for any contributions).
 - Please read the docs carefully Thanks
 
-## Installation
+## इंस्टालेशन
 
 > Using npm
 
@@ -47,7 +47,7 @@ npm i @hirishu10/simple-date-time
 yarn add @hirishu10/simple-date-time
 ```
 
-## Getting Started
+## शुरू करना
 
 ##### Simple and Customized Date-Time Functionality
 
@@ -86,15 +86,15 @@ const timestampLower = getCustomFullDateAndTimeWithAmPm();
 const timestampwithSeconds = getCustomFullDateAndTimeWithAmPmIncludingSeconds();
 ```
 
-##### Done 🙂 you don't need to write any further code to get the Date-Time Functionality just calling the simple function and you can good to go
+##### हो गया 🙂 आपको दिनांक-समय कार्यक्षमता प्राप्त करने के लिए कोई और कोड लिखने की आवश्यकता नहीं है, बस सरल फ़ंक्शन को कॉल करें और आप जा सकते हैं
 
 <!-- Getting Started -->
 
 <!-- overview -->
 
-## Overview
+## अवलोकन
 
-#### 📖 Below we provide examples with code how to use!
+#### 📖 नीचे हम उपयोग करने के तरीके के साथ उदाहरण प्रदान करते हैं!
 
 > getCustomDayNameFull();
 
@@ -221,23 +221,25 @@ Output: 10 Oct Fri 10:00:00 am
         <span style={{ fontWeight: "500", color: "mediumseagreen" }}>
           <code>getCustomDTFormatter</code>(dateValue?)
         </span>{" "}
-        - If you want to use old date please provide <code>unix</code> value
-        inside the dateValue.
+        - यदि आप पुरानी तारीख का उपयोग करना चाहते हैं तो कृपया अंदर{" "}
+        <code>unix</code> मान प्रदान करें दिनांकमान.
       </li>
       <li>
         <span style={{ fontWeight: "500", color: "mediumseagreen" }}>
           <code>format</code>(formatValue, insertCharacters?)
         </span>{" "}
-        - You have to pass formatValue (Please read the Method and Props table),
+        - आपको प्रारूप वैल्यू पास करना होगा (कृपया विधि और प्रॉप्स तालिका पढ़ें
+        / Please read the Method and Props table),
         <span style={{ color: "dodgerblue" }}>
           {" "}
-          Note: <span style={{ fontSize: "15px" }}>*</span>add space after each char
+          टिप्पणी: <span style={{ fontSize: "15px" }}>*</span>प्रत्येक के बाद स्थान
+          जोड़ें चार
         </span>
       </li>
       <li>
-        <code>insertCharacters</code> is totally optional, if you need to
-        provide a character at the end of each formatValue character, you can
-        add.
+        <code>insertCharacters</code> यदि आपको कोई चरित्र प्रदान करने की
+        आवश्यकता है तो यह पूरी तरह से वैकल्पिक है प्रत्येक प्रारूप वैल्यू वर्ण
+        के अंत में, आप जोड़ सकते हैं।
       </li>
       <li
         style={{
@@ -246,7 +248,7 @@ Output: 10 Oct Fri 10:00:00 am
           fontWeight: "500",
         }}
       >
-        Example below:
+        नीचे उदाहरण:
       </li>
     </ul>
   </div>
@@ -263,9 +265,9 @@ Output: 10⟆7⟆2023 ; //
 
 <!-- method and props  -->
 
-## Method and Props Configuration
+## विधि और प्रॉप्स कॉन्फ़िगरेशन
 
-🔧 Below are the props which you can use to customized the date-time behavior.
+🔧 नीचे वे प्रॉप्स दिए गए हैं जिनका उपयोग आप दिनांक-समय व्यवहार को अनुकूलित करने के लिए कर सकते हैं।
 
 | Method / Props                                                                                                |                   Type                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------ | :--------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -282,21 +284,21 @@ Output: 10⟆7⟆2023 ; //
 
 <!-- feature update -->
 
-## Feature Update
+## फ़ीचर अद्यतन
 
-##### We are working on this for improving the package which helps everyone thanks 🙏🏻
+##### हम पैकेज को बेहतर बनाने के लिए इस पर काम कर रहे हैं जिससे सभी को मदद मिलेगी धन्यवाद 🙏🏻
 
 <!-- feature update -->
 
 <!-- author  -->
 
-## Author
+## लेखक
 
-#### Thank You All 🙏🏻
+#### आप सभी को धन्यवाद 🙏🏻
 
 Made with 🖤 by
 
-**Author** : [Rishu Chowdhary](https://github.com/hirishu10)
+**Author** : [रिसु चौधरी](https://github.com/hirishu10)
 
 **Email** : hi.10rishu@gmail.com
 
@@ -304,10 +306,10 @@ Made with 🖤 by
 
 <!-- licesnce  -->
 
-## License
+## लाइसेंस
 
-### MIT License 📄
+### MIT लाइसेंस 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/hirishu10/simple-date-time/blob/main/LICENSE) file for details
+यह प्रोजेक्ट MIT लाइसेंस के तहत लाइसेंस प्राप्त है - विवरण के लिए [LICENSE.md](https://github.com/hirishu10/simple-date-time/blob/main/LICENSE) फ़ाइल देखें
 
 <!-- licesnce  -->
