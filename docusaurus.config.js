@@ -90,8 +90,7 @@ const config = {
           {
             type: "html",
             position: "right",
-            value:
-              "<a style='display:flex;justify-content:center;align-items:center;' href='https://github.com/hirishu10' target='_blank' ><img  width='24px' height='24px' src='/img/github-logo.svg' alt='githu/hirishu10'/></a>",
+            value: `<a style='display:flex;justify-content:center;align-items:center;' href='https://github.com/hirishu10' target='_blank' ><img  width='24px' height='24px' src='/img/github_logo_black.svg' alt='githu/hirishu10'/></a>`,
           },
         ],
         // This is for scroll navbar sticky

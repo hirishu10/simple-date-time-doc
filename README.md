@@ -1,41 +1,17 @@
-# Website
+# @hirishu10/simple-date-time
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+> Read the Official Documentation at → [https://simpledt.netlify.app/](https://simpledt.netlify.app/)
 
-### Installation
+## Changelog v.2.0.0
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- Major changes for version **v.2.0.0**
+- Two new **Function/Hooks** added:
+  - `getCustomMonth();`
+  - `getCustomYear();`
+- Some flag has been added, deprecated and modified. [#ref](https://simpledt.netlify.app/docs/intro#method-and-props-configuration)
+  -
+- Custom function/hook **`getCustomDTFormatter().format();`** introduced for better formatting.
+  - `getCustomDTFormatter(dateValue?)` - If you want to use the old date please provide an unix value inside the dateValue.
+  - `format(formatValue, insertCharacters?)`
+    - You have to pass `formatValue` ([Please read the Method and Props Config](https://simpledt.netlify.app/docs/intro#method-and-props-configuration)), Note: **\*add** space after each char.
+    - `insertCharacters` is totally optional, if you need to provide a character at the end of each **_formatValue_** character, you can add it.
